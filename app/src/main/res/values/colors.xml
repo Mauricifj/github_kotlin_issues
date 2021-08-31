@@ -1,0 +1,17 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<resources>
+  <color name="primaryColor">#007bff</color>
+  <color name="primaryLightColor">#69a9ff</color>
+  <color name="primaryDarkColor">#0050cb</color>
+  <color name="secondaryColor">#6c757d</color>
+  <color name="secondaryLightColor">#9aa4ac</color>
+  <color name="secondaryDarkColor">#414951</color>
+  <color name="primaryTextColor">#ffffff</color>
+  <color name="secondaryTextColor">#ffffff</color>
+
+  <color name="issue_open_state_text">#ff155724</color>
+  <color name="issue_closed_state_text">#ff721c24</color>
+
+  <color name="issue_open_state_background">#ffd4edda</color>
+  <color name="issue_closed_state_background">#fff8d7da</color>
+</resources>

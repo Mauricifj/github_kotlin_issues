@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="issue_details_action">GO TO ISSUE PAGE</string>
+    <string name="message_empty_list">No issues found</string>
+    <string name="message_loading">Loading issues…</string>
+</resources>
