@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="issue_details_action">VER PÁGINA DA ISSUE</string>
+    <string name="message_empty_list">Issues indisponíveis</string>
+    <string name="message_loading">Carregando issues…</string>
+</resources>

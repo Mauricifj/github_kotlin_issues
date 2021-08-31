@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondaryDarkColor">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/issues_list_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primaryColor"
+        style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
+        app:title="@string/app_name"
+        app:titleTextAppearance="?attr/textAppearanceHeadline5"
+    />
+
+    <TextView
+        android:id="@+id/issue_list_message"
+        android:layout_below="@+id/issues_list_toolbar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        tools:text="@string/message_empty_list" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_issues"
+        android:layout_below="@+id/issues_list_toolbar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    />
+
+    <RelativeLayout
+        android:id="@+id/loader"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/loading_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:showAnimationBehavior="outward"
+            android:indeterminate="true"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:layout_below="@+id/loading_spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:text="@string/message_loading" />
+    </RelativeLayout>
+
+</RelativeLayout>
